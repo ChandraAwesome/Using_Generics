@@ -1,77 +1,74 @@
-﻿using Patterns._4B_programs;
+﻿
+using System.Diagnostics;
+using System.Reflection.PortableExecutable;
 
-namespace Patterns
+namespace Generics_Code
+
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Access_Modifiers access= new Access_Modifiers();
-            //Console.WriteLine(access.y); // access the public modifier data
-            //Console.WriteLine(access.z);// we got error coz of z is a protected data type
-            //Console.WriteLine(access.x);// x is an private data type [error]
-            //
-            // Console.WriteLine("Hello, World!");
-            //Triangle.ReverseAngleTriangle();
-            //Triangle.RightAngleTriangle();
-            //Triangle.EquiTringle();
-            //Triangle.ReverseEqiTriangle();
-            //ReverseaNumber.ReverseusingChar();
-            //ReverseaNumber.Reverseusingloop();
+            // // Console.WriteLine("Hello, World!");
 
-            //SumofGivenNumbers.Add();
-            //SumofGivenNumbers.UsingArray();
+            //  Using_Genericss<string>  obj= new Using_Genericss<string>("Generics");
+            ////  Console.WriteLine(obj);
+            //  two obj1 = new two();
+            //  obj1.method<string>("Ajay");
+            //  obj1.method("Ajay");
+            //  //
+            //  Delegatess.Add(10);
 
-            //Duplicate_Elements.Count();
-            // MaxandMin.MaximumandMinimum();
+            //Console.WriteLine("Enter age");
+            //int age = Convert.ToInt32(Console.ReadLine());
 
-          //  ADDING AND DELETING ELEMENTS IN ARRAY USING INT DATA TYPE
-           // Console.WriteLine("Add the no of elements");
-           // int size = Convert.ToInt32(Console.ReadLine());
-           // int[] arr = new int[size];
-           //// int[] arr = { 10, 20, 30 };
-           // Console.WriteLine("Enter the elements");
-           // Console.WriteLine("Select from above Elements ");
-           // foreach (int j in arr)
-           // {
-           //     arr[j] = Convert.ToInt32(Console.ReadLine());
-           //     Console.WriteLine(j + " ");
-           // }
-           // Console.WriteLine("\n Plese pickup one element to delete");
-           // int delte = Convert.ToInt32(Console.ReadLine());
-           // DeleteElementss.DeleteElement(arr,delte);
+            //if(age>=18 && age<=60)
+            //{
+            //    Console.WriteLine("Eligible");
+            //}
+            //else if (age<18)
+            //{ Console.WriteLine("Not eligible"); }
 
-            //  //------------------USING THE DOUBLE DATA TYPE ELEMENTS----------------------------//
+            //else { Console.WriteLine("Stay Home"); }
 
-            //  Console.WriteLine("Add the no of elements");
-            //  int sizee = Convert.ToInt32(Console.ReadLine());
-            //  int[] arrr = new int[sizee];
-            //  //int[] arr = {10,20, 30};
-            //  Console.WriteLine("Enter the elements");
-            //  //  Console.WriteLine("Select from above Elements ");
-            //  foreach (int j in arrr)
-            //  {
-            //      arr[j] = Convert.ToInt32(Console.ReadLine());
-            //      //Console.WriteLine(j+" ");
-            //  }
-            //  Console.WriteLine("\n Plese pickup one element to delete");
-            //  int delete = Convert.ToInt32(Console.ReadLine());
-             // DeleteElementss.DeleteElement1(arr, delete);
+            ////
+
+            //Console.WriteLine("Enter day number");
+            //int day = Convert.ToInt32(Console.ReadLine());
+            //switch (day) 
+            //{
+            //    case 1: Console.WriteLine("Sunday");break;
+            //    case 2: Console.WriteLine("Monday");break;
+            //    case 3: Console.WriteLine("Tuesday"); break;
+            //    case 4: Console.WriteLine("wednesday"); break;
+            //    case 5: Console.WriteLine("Thrusday"); break;
+            //    case 6: Console.WriteLine("Friday"); break;
+            //    case 7: Console.WriteLine("Saturday"); break;
+
+            //        default: Console.WriteLine("Days of week");break;
+            //}
+
+            //ReverseAstring words = new ReverseAstring();
+            //words.reverse();
+
+           // new NewClass<int>(10, 20);
 
             Console.WriteLine("Add the no of elements");
-            int sizee = Convert.ToInt32(Console.ReadLine());
-            char[] arrr1 = new char[sizee];
-            //int[] arr = {10,20, 30};
+            int size = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[size];
+            // int[] arr = { 10, 20, 30 };
             Console.WriteLine("Enter the elements");
-            //  Console.WriteLine("Select from above Elements ");
-            foreach (int j in arrr1)
+            foreach (int j in arr)
             {
-                arrr1[j] = Convert.ToChar(Console.ReadLine());
-                //Console.WriteLine(j+" ");
+                arr[j] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(j + " ");
             }
             Console.WriteLine("\n Plese pickup one element to delete");
-            char delete = Convert.ToChar(Console.ReadLine());
-            DeleteElementss.DeleteElement2(arrr1, delete);
+            int delte = Convert.ToInt32(Console.ReadLine());
+            Generic_Class<int>.DeleteElement(arr, delte);
+
+
+
         }
     }
 }
